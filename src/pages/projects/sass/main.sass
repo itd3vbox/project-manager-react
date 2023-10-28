@@ -1,0 +1,22 @@
+#projects
+    width: 100%
+    min-height: 100%
+    gap: 25px
+        
+
+    .block-main
+        gap: 25px
+        display: grid
+        grid-template-columns: repeat(auto-fill, 300px)
+
+        .row 
+            gap: 25px
+            .col
+                padding: 0
+                gap: 25px
+                display: flex
+                flex-direction: column
+                
+                &:nth-child(1),
+                &:nth-child(3)
+                    flex: 0

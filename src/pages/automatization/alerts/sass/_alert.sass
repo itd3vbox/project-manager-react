@@ -1,0 +1,63 @@
+.alert
+    gap: 50px
+    padding: 0
+    margin: 0
+    position: relative
+    box-sizing: border-box
+    padding: 5px 25px
+
+    &:hover
+        background-color: aliceblue
+
+    &.selected::before
+        content: ''
+        display: block
+        position: absolute
+        top: 50%
+        left: 5px
+        width: 4px
+        height: calc(100% - 10px)
+        transform: translateY(-50%)
+
+    .icon
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        font-size: 15px
+
+    .message h6
+        font-size: 1.1rem
+        font-weight: bolder
+        margin-bottom: 10px
+
+    .message p
+        font-size: 0.8rem
+        margin: 0
+
+    button
+        width: 30px
+        height: 30px
+        font-size: 15px
+        padding: 0
+        background-color: transparent
+        border: none
+        color: #c0c0c0
+
+    button:active
+        background-color: transparent
+        border: none
+        color: black
+
+    &.color-1.selected::before
+        background-color: royalblue
+
+    &.color-1 .icon
+        background-color: royalblue
+        color: #fff
+
+    &.color-2.selected::before
+        background-color: orangered
+
+    &.color-2 .icon
+        background-color: orangered
+        color: #fff

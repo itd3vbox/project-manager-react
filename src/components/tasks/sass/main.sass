@@ -1,0 +1,32 @@
+.tasks.card
+    min-width: 400px
+    background-color: aqua
+    border: none
+    border-radius: 1rem
+
+    .card-body h5
+        font-size: 1rem
+        font-weight: bolder
+
+    ul li
+        gap: 10px
+        border-top: none
+        border-left: none
+        border-right: none
+        background-color: transparent
+        border-radius: 0
+
+        .name
+            font-size: 0.8rem
+
+        .btn
+            border: none
+
+            svg:nth-child(2)
+                display: none
+
+        &.done .btn svg:nth-child(1)
+            display: none
+
+        &.done .btn svg:nth-child(2)
+            display: inline-block

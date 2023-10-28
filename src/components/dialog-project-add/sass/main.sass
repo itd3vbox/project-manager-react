@@ -1,0 +1,29 @@
+.dialog-project-add 
+
+	&.fade .modal-dialog
+		transform: none
+	
+	.modal-dialog
+		position: fixed
+		top: 25px
+		margin: auto
+		width: 400px
+		height: calc(100% - 50px)
+		transform: translateY(50%)
+		right: -400px
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out
+		-moz-transition: opacity 0.3s linear, right 0.3s ease-out
+		-o-transition: opacity 0.3s linear, right 0.3s ease-out
+		transition: opacity 0.3s linear, right 0.3s ease-out
+
+	&.fade .modal-dialog
+		right: 25px
+
+	.modal-content
+		height: 100%
+		overflow-y: auto
+	
+	.modal-body
+		padding: 15px 15px 80px
+
+

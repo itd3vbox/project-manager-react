@@ -1,0 +1,58 @@
+.tests.card
+    min-width: 400px
+    background-color: aqua
+    border: none
+    border-radius: 1rem
+        
+    .card-body h5
+        font-size: 1rem
+        font-weight: bolder
+
+    ul li
+        gap: 10px
+        border-top: none
+        border-left: none
+        border-right: none
+        background-color: transparent
+        position: relative
+        border-radius: 0
+
+        .name
+            font-size: 0.8rem
+
+        .duration
+            font-size: 0.8rem
+
+        .btn
+            border: none
+            width: 30px
+            height: 30px
+            font-size: 15px
+            padding: 0
+
+            svg:nth-child(2)
+                display: none
+
+        &.t-progress
+            &::after
+                content: ''
+                display: block
+                width: 4px
+                height: 100%
+                background-color: rebeccapurple
+                position: absolute
+                left: 0
+                top: 0
+
+            .duration
+                font-size: 1.1rem
+                font-weight: bolder
+
+            .btn
+                background-color: rebeccapurple
+                
+                svg:nth-child(1)
+                    display: none
+
+                svg:nth-child(2)
+                    display: inline-block

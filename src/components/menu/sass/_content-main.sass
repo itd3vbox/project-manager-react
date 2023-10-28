@@ -1,0 +1,63 @@
+& > .content-main
+    padding: 50px 0
+    
+    & > .home-link
+        text-decoration: none
+        padding: 0 25px
+        font-size: 1.3rem
+        font-weight: bolder
+        margin-bottom: 20px
+
+    & > ul > li > a > .icon,
+    & > ul > li > div:nth-child(1) > a > .icon
+        width: 50px
+
+    & > ul > li:not(.item-sub-menu).current,
+    & > ul > li > div:nth-child(1).current
+        border-right: 4px solid
+        box-sizing: border-box
+        background-color: aliceblue
+
+    & > ul > li > div:nth-child(1)
+        box-sizing: border-box
+        padding-right: 15px
+
+    & > ul > li > div:nth-child(1) > .btn
+        width: 25px
+        height: 25px
+        font-size: 10px
+
+
+    & > ul > li > .menu-sub
+        padding: 15px 0
+
+
+    & > ul > li > .menu-sub ul
+        list-style: none
+        box-sizing: border-box
+        padding-left: calc(16px + 35px)
+        padding-right: 10px
+        position: relative
+
+    & > ul > li > .menu-sub ul:before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: calc(16px + 25px)
+        width: 1px
+        height: 100%
+        background-color: black
+
+    & > ul > li > .menu-sub ul li
+        border-radius: 0.3rem
+        transition-property: background-color
+        transition-duration: 0.5s
+
+    & > ul > li > .menu-sub ul li:not(:first-child)
+        margin-top: 5px
+
+
+    & > ul > li > .menu-sub ul li:hover
+        background-color: blueviolet
+        color: white
